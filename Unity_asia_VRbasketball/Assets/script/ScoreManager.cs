@@ -12,7 +12,10 @@ public class ScoreManager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        print(other.name);
+        if (other.tag == "籃球")
+        {
+            print("加分");
+        }
     }
 }
 
